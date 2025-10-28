@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa Biatlonového areálu Letohrad</title>
+
+  <!-- Leaflet CSS (bez integrity) -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-text">
+    <h1>BIATLONOVÝ AREÁL LETOHRAD</h1>
+    <p>Interaktivní průvodce tratěmmi a zázemím areálu</p>
+  </div>
+  <div class="header-logo">
+  <img src="logo.png" alt="Logo Biatlon Letohrad">
+</div>
+</header>
+
+  <main>
+    <div id="map"></div>
+  </main>
+
+  <!-- Leaflet JS (bez integrity) -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
