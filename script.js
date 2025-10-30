@@ -32,7 +32,7 @@ const baseLayers = {
 };
 
 // Načtení GeoJSON vrstvy tratí z GitHubu
-fetch('https://raw.githubusercontent.com/Dzejkob1/biathlon-letohrad-map/refs/heads/main/trasy.geojson')
+fetch('data/layers/trasy.geojson')
   .then(res => res.json())
   .then(data => {
     const trasyLayer = L.geoJSON(data, {
@@ -63,3 +63,4 @@ L.control.layers(baseLayers, {}, { collapsed: false }).addTo(map);
 L.marker(LETOHRAD_COORDS)
   .addTo(map)
   .bindPopup("<h2>Biatlonový areál Letohrad</h2><p>Centr mapy</p>");
+
